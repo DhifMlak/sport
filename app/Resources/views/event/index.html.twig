@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Events list</h1>
+    <a class="btn btn-primary" href="{{ path('event_new') }}">Ajouter un event</a>
+    <div class="table-responsive m-t-40">
+        <table class="display nowrap table table-hover table-striped table-bordered" width="100%">
+            <thead>
+            <tr>
+
+                <th>Nom</th>
+                <th>Dscription</th>
+                <th>Image</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for event in events %}
+            <tr>
+                <td>{{ event.nom }}</td>
+                <td>{{ event.dscription }}</td>
+                <td>{{ event.image }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a class="btn btn-success" href="{{ path('event_show', { 'id': event.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a class="btn btn-warning" href="{{ path('event_edit', { 'id': event.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+
+    </div>
+{% endblock %}

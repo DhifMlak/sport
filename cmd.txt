@@ -1,0 +1,10 @@
+php composer.phar install
+ou
+composer install
+
+
+php ./bin/console doctrine:database:create
+php ./bin/console doctrine:schema:create
+
+- pour lancer le projet
+php ./bin/console server:run

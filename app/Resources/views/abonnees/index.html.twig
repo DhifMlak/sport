@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Abonnees list</h1>
+    <a class="btn btn-primary" href="{{ path('abonnees_new') }}">Ajouter un abonnee</a>
+<div class="table-responsive m-t-40">
+    <table class="display nowrap table table-hover table-striped table-bordered" width="100%">
+        <thead>
+            <tr>
+
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Cin</th>
+                <th>Datedebut</th>
+                <th>Datefin</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for abonnee in abonnees %}
+            <tr>
+                <td>{{ abonnee.name }}</td>
+                <td>{{ abonnee.phone }}</td>
+                <td>{{ abonnee.cin }}</td>
+                <td>{% if abonnee.dateDebut %}{{ abonnee.dateDebut|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{% if abonnee.dateFin %}{{ abonnee.dateFin|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a  class="btn btn-success"  href="{{ path('abonnees_show', { 'id': abonnee.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a  class="btn btn-warning"  href="{{ path('abonnees_edit', { 'id': abonnee.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+
+</div>
+{% endblock %}
