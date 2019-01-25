@@ -1,0 +1,258 @@
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+    body {
+        font-size: 14px;
+    }
+    .home-area .headline {
+        font-size: 60px;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .single-price ul li:before {
+        width: 20px;
+    }
+    body {
+        font-size: 14px;
+    }
+    .home-area .headline {
+        font-size: 40px;
+    }
+    .social-menu li:first-child {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .home-area .headline {
+        font-size: 50px;
+    }
+    .mainmenu-area ul.nav.navbar-nav {
+        text-align: center;
+        float: none !important;
+        width: 100%;
+    }
+    .mainmenu-area ul.nav.navbar-nav > li {
+        float: none !important;
+        display: inline-block;
+    }
+    .mainmenu-area ul.nav.navbar-nav > li > a {
+        padding: 20px 15px;
+    }
+    .navbar-header {
+        text-align: center;
+        float: none;
+        text-align: center;
+    }
+    .mainmenu-area .navbar-brand {
+        float: none;
+        width: 100%;
+    }
+    .mainmenu-area .navbar-brand img {
+        display: inline-block;
+    }
+    .parallax {
+        display: none;
+    }
+}
+
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+        font-size: 14px;
+    }
+    .home-area .headline {
+        font-size: 40px;
+    }
+    .xs-space-30 {
+        height: 60px;
+        display: block;
+        width: 100%;
+    }
+    .section-padding-top {
+        padding-top: 80px;
+    }
+    .section-padding {
+        padding: 80px 0;
+    }
+    .service-box,
+    .single-price,
+    .single-team,
+    .single-blog {
+        margin-bottom: 30px;
+    }
+    #service_page:before {
+        display: none;
+    }
+    .mainmenu-area ul.nav.navbar-nav {
+        text-align: center;
+        float: none !important;
+        width: 100%;
+    }
+    .mainmenu-area ul.nav.navbar-nav > li {
+        float: none !important;
+        display: inline-block;
+    }
+    .mainmenu-area ul.nav.navbar-nav > li > a {
+        padding: 20px 15px;
+    }
+    .navbar-header {
+        text-align: center;
+        float: none;
+        text-align: center;
+    }
+    .mainmenu-area .navbar-brand {
+        float: none;
+        width: 100%;
+    }
+    .mainmenu-area .navbar-brand img {
+        display: inline-block;
+    }
+    .social-menu li:first-child {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .parallax {
+        display: none;
+    }
+}
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 12px;
+    }
+    .bttn.bttn-lg {
+        padding: 10px 20px;
+    }
+    .xs-space-30 {
+        height: 30px;
+        display: block;
+        width: 100%;
+    }
+    .mainmenu-area {
+        position: static;
+        margin-bottom: 0;
+        padding: 0;
+    }
+    .mainmenu-area .navbar-toggle {
+        border: 1px solid #ffffff;
+        border-radius: 0;
+        margin-top: 23px;
+        border-radius: 3px;
+    }
+    .mainmenu-area .navbar-toggle:focus,
+    .mainmenu-area .navbar-toggle:hover {
+        background: none;
+    }
+    .mainmenu-area ul.nav.navbar-nav > li {
+        display: block;
+    }
+    .mainmenu-area ul.nav.navbar-nav > li > a {
+        padding: 10px 20px;
+    }
+    .mainmenu-area ul.nav.navbar-nav > li > a:before {
+        display: none;
+    }
+    .home-area {
+        height: auto;
+    }
+    .home-area .headline {
+        font-size: 40px;
+    }
+    .bg-slider .item .vcenter {
+        position: static;
+        top: 0;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+        padding: 100px 0;
+    }
+    .bg-slider .item {
+        height: auto;
+    }
+    .join-button {
+        display: none;
+    }
+    .home-area .bg-slider .owl-controls {
+        display: none;
+    }
+    .section-padding-top {
+        padding-top: 60px;
+    }
+    .section-padding {
+        padding: 60px 0;
+    }
+    .page-title .title {
+        font-size: 30px;
+    }
+    .parallax {
+        display: none;
+    }
+    #service_page:before {
+        display: none;
+    }
+    .service-box {
+        margin-bottom: 30px;
+    }
+    .shidiul-area .filter-menu li {
+        display: block;
+        border-radius: 3px;
+    }
+    .page-title {
+        margin-bottom: 40px;
+    }
+    .single-work .work-details .table-cell {
+        padding: 15px;
+    }
+    .single-price {
+        margin-bottom: 30px;
+        padding: 30px 15px;
+    }
+    .single-team {
+        margin-bottom: 30px;
+    }
+    .signle-testimonial {
+        margin: 0;
+        padding: 80px 15px;
+    }
+    .signle-testimonial .testimonial-photo {
+        left: 0;
+    }
+    .signle-testimonial:nth-child(2n) .testimonial-photo {
+        right: 0;
+    }
+    .single-blog {
+        margin-bottom: 30px;
+    }
+    .v-bttn {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+    .video-section {
+        padding: 100px 0;
+    }
+    .footer-area {
+        padding-top: 60px;
+    }
+    .footer-area .footer-bottom {
+        margin-top: 60px;
+        padding-top: 60px;
+    }
+    #scrollUp {
+        right: 15px;
+        bottom: 15px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 16px;
+    }
+}
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
